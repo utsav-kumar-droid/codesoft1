@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+    background-color: rgb(179, 209, 236);
+}
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width:100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height:50px;
+
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color:#f0f0f0;
+}
+nav li:first-child{
+    margin-right: auto;
+
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+.slidebar  a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff;
+    margin-left: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 3%;
+    font-size: xx-large;
+    width: 200px;
+
+}
+
+.image{
+    min-height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    background-image: url("web-development-team.jpg");
+}
+ 
+.h2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color:#fff;
+    width: 200px;
+    margin-left: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 3%;
+    
+}
+.p{
+    font-size:xx-large ;
+    margin:1%;
+}
+
+
+.back-option {
+    text-decoration: none;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #000;
+    background-color: #376d94;
+    margin-bottom: 5px;
+}
+.back-option:hover {
+    outline: 1px solid black;
+}
+.footer-links {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#022A5E;
+    color: #000;
+    align-items: center;
+}
+.footer-links ul {
+    margin-top: 0rem;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.footer-links ul a {
+    font-weight: bold;
+}
+.footer-links ul a {
+    display: block;
+    font-size: 0.7rem;
+    color: #000;
+    margin-top: 3rem;
+    cursor: pointer;
+    background-color: #fff;
+    border-color: #000;
+    border: #848485;
+    border-radius: 4px;
+    font-weight: bolder;
+    box-sizing: content-box;
+    font-size: small;
+}
+footer-links ul a:hover {
+    text-decoration: underline;
+}
+
+.socialIcon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+.socialIcon:hover {
+    outline: 1px solid black;
+}
+.policies {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.5rem;
+    color: #000;
+    background-color: #fff;
+}
+.pages a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 1rem;
+}
+
+
+
+
+@media(max-width: 800px){
+ .hideOnMobile{
+    display: none;
+ }
+ .menu-button{
+    display: block;
+ }
+ .heading{
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+    font-size: larger;
+    font-weight: bolder;
+ }
+ .h2{
+    width:auto;
+    height: auto;
+    font-size: large;
+    font-weight: bold;
+ }
+ .image{
+    width: auto;
+    height: auto;
+ }
+ .p{
+    font-size: small;
+ }
+ .footer-links li a{
+    font-size: xx-small;
+ }
+
+ nav li a{
+   font-size: x-small;
+ }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+    
+}

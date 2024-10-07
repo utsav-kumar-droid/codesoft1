@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/index.html" >About</a></li>
+            <li><a href="../services/index.html" >Services</a></li>
+            <li><a href="../contacts/index.html" >Contact</a></li>
+            <li><a href="#" >Login</a></li>
+
+        </ul>
+        <ul >
+            <li><a href="#"><b>webdevservices</b></a></li>
+            <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="../about/index.html" >About</a></li>
+            <li class="hideOnMobile"><a href="../services/index.html" >Services</a></li>
+            <li class="hideOnMobile"><a href="../contacts/index.html" >Contact</a></li>
+            <li class="hideOnMobile"><a href="#" >Login</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#" ><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <h1 class="heading">About Us</h1>
+
+
+
+
+<!-- <nav>
+    <a href="">Home|</a>
+    <a href="#">About|</a>
+    <a href="../services/index.html">Services|</a>
+    <a href="">Contact</a>
+</nav> -->
+<h2 class="h2">Who We Are</h2>
+<p class="p">We are a dedicated team of web developers based in India, passionate about helping businesses and individuals establish a strong online presence. With years of experience, we offer comprehensive web development solutions tailored to your needs. </p>
+
+<div class="image"></div>
+
+
+
+
+<footer>
+    <a href="#" class="back-option">Back to top</a>
+    <div class="footer-links">
+        <ul>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Grievances</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Forgot password</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </div>
+
+    <div class="socialIcon">
+        <a href="#" id="face"><i class="bi bi-facebook" style="color:#1A4789"></i></a>
+        <a href="#" id="twi"><i class="bi bi-twitter" style="color:#1D9BF0"></i></a>
+        <a href="#" id="insta"><i class="bi bi-instagram" style="color:#C13584"></i></a>
+        <a href="#" id="you"><i class="bi bi-youtube" style="color:#E7191F"></i></a>
+        <a href="#" id="tik"><i class="bi bi-tiktok" style="color:#25F4EE"></i></a>
+    </div>
+
+    <div class="policies">
+        <div class="pages">
+            <a href="#">About Us |</a>
+            <a href="#">Help |</a>
+            <a href="#">Sitemap |</a>
+            <a href="#">Website Policies |</a>
+            <a href="#">Feedback |</a>
+            <a href="#">Contact Us |</a>
+        </div>
+        <p>© Copyright, all rights reserved</p>
+    </div>
+
+
+</footer>
+    
+
+<script>
+    function  showSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display ='flex'
+    }
+    function  hideSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display ='none'
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
